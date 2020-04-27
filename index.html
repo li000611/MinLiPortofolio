@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Min Li's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <!-- your CSS file link goes HERE -->
+    <link rel='stylesheet' href='./css/main.css'/>
+</head>
+
+<body>
+<div class='container'>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<header>
+    <!-- your content goes here -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <img src="./imgs/limin.png" alt="">
+        <h2>Min Li</h2>
+    </div>
+</header>
+<div class="container">
+    <div class="row row-cols-md-3">
+        <div class="col mb-4">
+            <div class="card h-100"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script>
+    let text = [{imgSrc:'imgs/git.png',h2Text:'Tech 1: GitHub',pText:'GitHub is an American company that provides hosting for software development. Github includes\n' +
+            '                    version control using Git, which allows software projects to keep track of all versions and\n' +
+            '                    revert to previous versions if necessary. It offers all of the distributed version control\n' +
+            '                    and\n' +
+            '                    source code management (SCM) functionality of Git as well as adding its own features. It\n' +
+            '                    provides\n' +
+            '                    access control and several collaboration features such as bug tracking, feature requests,\n' +
+            '                    task\n' +
+            '                    management, and wikis for every project.'},
+        {imgSrc:'imgs/android.png',h2Text:'Tech 2: Android',pText:'Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. \n' +
+                '                    Android\n' +
+                '                    is developed\n' +
+                '                    by a consortium of developers known as the Open Handset Alliance,\n' +
+                '                    with the main\n' +
+                '                    contributor\n' +
+                '                    and commercial marketer being Google.'},
+        {imgSrc:'imgs/java.jpg',h2Text:'Tech 3: Java',pText:'Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation\n' +
+                '                    dependencies as possible. It is intended to let application developers write\n' +
+                '                    once,\n' +
+                '                    run anywhere (WORA),meaning that compiled\n' +
+                '\n' +
+                '                    Java code can run\n' +
+                '                    on all platforms that support\n' +
+                '                    Java\n' +
+                '                    without the need for recompilation.'},
+        {imgSrc:'imgs/css.png',h2Text:'Tech 4: CSS',pText:'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation\n' +
+                '                    of a document written in a markup language like HTML. CSS is a cornerstone technology of the\n' +
+                '                    World Wide Web, alongside HTML and JavaScript.CSS is designed to enable the separation of\n' +
+                '                    presentation and content, including layout,\n' +
+                '                    colors,and fonts. '},
+        {imgSrc:'imgs/weka.png',h2Text:'Tech 5: Weka',pText:'Waikato Environment for Knowledge Analysis (Weka), developed at the University of Waikato, New Zealand.\n' +
+                '                    It is free software licensed under the GNU General Public License, and the companion software to the book "Data Mining: Practical Machine Learning Tools and Techniques".\n' +
+                '                    Weka contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to these functions.'},
+        {imgSrc:'imgs/js.png',h2Text:'Tech 6: JavaScript',pText:'JavaScript often abbreviated as JS, is a high-level, just-in-time compiled, object-oriented\n' +
+                '                    programming language that conforms to the ECMAScript specification. JavaScript has\n' +
+                '                    curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class\n' +
+                '                    functions.Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide\n' +
+                '                    Web.'},
+        {imgSrc:'imgs/wireshark.png',h2Text:'Tech 7: Wireshark',pText:'Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.\n' +
+                '                    Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues.\n' +
+                '                    Wireshark is cross-platform, using the Qt widget toolkit in current releases to implement its user interface, and using pcap to capture packets;\n' +
+                '                    it runs on Linux, macOS, BSD, Solaris, some other Unix-like operating systems, and Microsoft Windows.\n' +
+                '                '}
+    ], cardEle =document.querySelector('.card'),textHtml='';
+    text.forEach((item,index)=>{textHtml+=`
+                <img src=${item.imgSrc} class="card-img-left">
+                <div class="card-body">
+                    <h2>${item.h2Text}</h2>
+                    <p>${item.pText}</p>
+                </div>
+            `;
+    if(index=text.length-1){
+        cardEle.innerHTML=textHtml;}});
+</script>
+</body>
+
+</html>

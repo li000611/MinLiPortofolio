@@ -1,0 +1,83 @@
+// logo source: https://en.wikipedia.org/
+// logo source: https://getbootstrap.com/
+:root{
+    --primary-1:hsl(246, 96%, 39%);
+    --primary-2:hsl(240, 69%, 48%);
+    --secondary-1:hsl(60deg, 50%, 30%);
+    --secondary-2:hsl(219, 79%, 66%);
+  }
+
+  html {
+    font-size: 20px;
+    line-height: 1.7;
+    padding:0;
+  }
+  
+  header {
+    min-height: 15rem;
+    margin: 0rem ;
+    
+  }
+
+  .jumbotron{
+    background-image:url('../imgs/backgound.jpg') ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    img{
+      width: 20%;
+      height: auto;
+      min-width: 100px;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  }
+  
+  nav {
+    width: 100%;
+    // display: inline;
+    // flex-direction: row;
+    line-height: 3rem;
+  }
+  
+  nav a {
+    color: var(--secondary-1);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+// .card{
+//   max-width: 20rem;
+// }
+.navbar{
+    background-color:var(--secondary-2);
+    width:100%;
+}
+
+
+.nav-link{
+    color:var(--primary-2);
+}
+
+.technology{
+  margin: 2rem;
+  border:var(--primary-1) solid 0.05rem;
+  border-radius: 30px;
+  display: flex;
+  min-width: 400px;
+  // flex-direction: column;
+}
+
+.technology img{
+  margin: 1rem 1rem 1rem 1rem;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+
+@media (max-width: 600px) {
+.technology {flex-direction: column; } 
+}
+
+// @media (min-width: 1200px) {
+//   .technology {flex-direction: column; } 
+//   }
